@@ -2,10 +2,12 @@
 import ComponentBasics from "@/features/component-basics/ComponentBasics.vue";
 import { ref } from "vue";
 import Watchers from "./features/watchers/Watchers.vue";
+import BuiltInComponents from "./features/builtin-components/BuiltInComponents.vue";
 
 const tabs = {
   ComponentBasics,
   Watchers,
+  BuiltInComponents,
 };
 
 const currentTab = ref<keyof typeof tabs>("ComponentBasics");
